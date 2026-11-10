@@ -1,0 +1,63 @@
+/* Estilos generales */
+
+body {
+    background-color: #e8f4fc;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 40px 20px;
+    color: #263746;
+}
+
+/* Contenedor principal */
+
+.contenedor {
+    background-color: white;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+}
+
+/* Título principal */
+
+h1 {
+    color: #1769aa;
+    margin-bottom: 25px;
+}
+
+/* Nombre del cliente */
+
+h3 {
+    color: #34495e;
+    font-size: 20px;
+}
+
+/* Información del plan */
+
+p {
+    font-size: 17px;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+/* Total a pagar */
+
+h2 {
+    background-color: #1769aa;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+/* Descuento */
+
+.descuento {
+    color: #16803c;
+    font-weight: bold;
+    background-color: #e3f8e9;
+    border-radius: 8px;
+    padding: 10px;
+}

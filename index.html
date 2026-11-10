@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarifa Transporte</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <script>
+        // 1. Solicitar datos al usuario
+        let Nombre = prompt ("Ingrese el nombre del usuario")
+        let TipoTransporte = Number(prompt("Seleccione el tipo de transporte:\n" +
+        "1. Bus Urbano\n" +
+        "2. Metro\n" +
+        "3. Taxi\n" +
+        "4. Intermunicipal"))
+
+        let Condicion = Number(prompt("Escoja alguna de las condiciones, si aplica:\n" +
+        "1. Estudiante\n" +
+        "2. Adulto Mayor\n" +
+        "3. Ninguna"))
+
+        // 2. Declarar variables de precio
+        let Precio = 0
+        let Transporte = ""
+
+        // 3. Determinar precio segun transporte
+        switch (TipoTransporte) {
+        case 1:
+            Transporte = "Bus Urbano"
+            Precio = 2500
+        break
+        case 2:
+            Transporte = "Metro"
+            Precio = 2800
+            break
+        case 3:
+            Transporte = "Taxi"
+            Precio = 5000
+        break
+        case 4:
+            Transporte = "Intermunicipal"
+            Precio = 10000
+        break
+        default:
+            alert("Opcion de transporte no valida")}
+
+        // 4. Declarar variables de descuento
+        let Descuento = 0
+        let ValorFinal = 0
+        let Porcentaje = 0
+
+        // 5. Determinar valor del descuento (si aplica)
+        if (Condicion == 1) {
+            Porcentaje = 20
+            Descuento = Precio * 0.20
+        } else if (Condicion == 2) {
+        Porcentaje = 30
+        Descuento = Precio * 0.30
+        } else if (Condicion == 3) {
+        Porcentaje = 0
+        Descuento = 0
+        } else {
+        alert("Condicion no valida")
+        }
+        ValorFinal = Precio - Descuento;
+
+        // 6. Salidas
+        document.write("<h1>Resultado de tarifa de transporte</h1>")
+        document.write("<h3>Nombre: " + Nombre + "</h3>")
+        document.write("<p>Transporte: " + Transporte + "</p>")
+        document.write("<p>Precio base: $" + Precio + "</p>")
+        document.write("<p>Descuento aplicado: " + Porcentaje + "%</p>")
+        document.write("<p>Valor del descuento: $" + Descuento + "</p>")
+        document.write("<h2>Total a pagar: $" + ValorFinal + "</h2>")
+
+    </script>
+    
+</body>
+</html>
